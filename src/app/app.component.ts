@@ -13,6 +13,7 @@ export class AppComponent {
   genders = ['male', 'female'];
   user = {
     username: '',
+    pass: '',
     email: '',
     secretQuestion: '',
     answer: '',
@@ -27,6 +28,7 @@ export class AppComponent {
       this.signupForm.setValue({
         userData: {
           username: 'Mark Gapper',
+          pass: 'Qwerty123',
           email: 'gapper.mark@gmail.com'
         },
         secret: 'pet',
@@ -47,6 +49,7 @@ export class AppComponent {
   onSubmit() {
     this.submitted = true;
     this.user.username = this.signupForm.value.userData.username;
+    this.user.username = this.signupForm.value.userData.pass;
     this.user.email = this.signupForm.value.userData.email;
     this.user.secretQuestion = this.signupForm.value.secret;
     this.user.answer = this.signupForm.value.questionAnswer;
