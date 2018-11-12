@@ -1,6 +1,11 @@
-# MyFirstApp
+# Angular 4 Template Driven Forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+Template Driven Froms Validation  
+State Handling  
+Loading data on load of form  
+Clearing the from  
+Specific validation errors  
+Enabling the Submit Button on valid and on change of some value of preloaded data  
 
 ## Development server
 
