@@ -44,8 +44,8 @@
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               #pass="ngModel">
               <!-- {{ f.get('username').valid }} -->
-              <span class="error" *ngIf="!pass.valid && pass.touched && pass.errors.required">Please enter a valid Password!</span>
-              <span class="error" *ngIf="!pass.valid && pass.touched && pass.errors.minlength">Password should have minimum 8 characters!</span>
+              <span class="error" *ngIf="!pass.valid && pass.touched && pass.errors.required">Please enter a valid Password!</span> <br/>
+              <span class="error" *ngIf="!pass.valid && pass.touched && pass.errors.minlength">Password should have minimum 8 characters!</span><br/>
               <span class="error" *ngIf="!pass.valid && pass.touched && pass.errors.pattern">Password Should have least one number - one uppercase - lowercase letter!</span>
           </div>
           <div class="form-group">
