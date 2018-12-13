@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('f') signupForm: NgForm;
   defaultQuestion = 'teacher';
   isChecked = false;
@@ -20,6 +20,12 @@ export class AppComponent {
     gender: ''
   };
   submitted = false;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.loadData();
+    }, );
+  }
 
   loadData() {
     this.isChecked = !this.isChecked;
